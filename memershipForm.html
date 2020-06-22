@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafaBoda Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+     <link rel="stylesheet" href="./index.css">
+   
+</head>
+<body class="body">
+    <div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12">
+              <img src="./logo.JPG" alt="" style="width:15rem; height:5rem;" class="col-md-3 mr-5">
+              <div class="col-md-8">
+                <div class="navbar-brand text-muted" style="padding-left: 20px;">
+                  <h2><strong><i>Memberhip Portal</i></strong></h2>
+                </div>
+                <div class="float-right">
+                  <ul class="navbar-nav mr-auto mt-2 ml-2">
+                      <li class="nav-item">
+                      <a class="nav-link" id="logout" href="./Index.html" >Logout</a>
+                      </li>
+                    </ul> 
+                </div>  
+              </div>
+            </nav>
+        </div>
+        <div class="container row mt-5">   
+            <div class="col-md-12">
+                <form class = "card" style="background-color: whitesmoke;">
+                    <div style="position: relative; right: 0px;">
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Membership Form</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-left">
+                            <div class="mb-4 ml-5">
+                                <img src="./pic1.jpg" alt="" style="height: 100px; width: 100px;">
+                                <br>
+                                <a href="" id= "file" onchange= "loadFile(event)" width= "200">Upload photo</a>
+                            </div>
+                            <input type="text" id="surName" class="form-control" placeholder="Surname">
+                            <input type="text" id="otherName" class="form-control" placeholder="Other name">
+                            <input type="text" id="idNo" class="form-control" placeholder="ID No">
+                            <input type="text" id="boxNo" class="form-control" placeholder="P.O Box">
+                            <input type="text" id="postCode" class="form-control" placeholder="Post code">
+                            <input type="text" id="town" class="form-control" placeholder="Town">
+                           
+                            
+
+                            <input type="email" id="email" class="form-control" placeholder="Email Adress">                   
+                            
+                            <input type="number" id="age" class="form-control" placeholder="Age">
+                        </div> 
+                        <div class="col-md-12 form-right">
+                            <input type="text" id="nin" class="form-control" placeholder="NIN">
+                            <input type="text" id="homeAdress" class="form-control" placeholder="Home Adress">
+                            <input type="text" id="officeAdress" class="form-control" placeholder="Office Adress">
+                            <input type="tel" id="mobileContact" class="form-control" placeholder="Tel.1) Mobile">
+                            <input type="tel" id="officeContact" class="form-control" placeholder="Tel.2) office">
+                            <input type="tel" id="otherContact" class="form-control" placeholder="Tel.3) other ">
+
+                            <input type="date" id="date" class="form-control" placeholder="Recruitment date">
+                            <input type="text" id="nextOfKinName" class="form-control" placeholder="Full Name of Next of kin.">
+                            <input type="text" id="contactOfKin" class="form-control" placeholder="Next of kin contact">
+                        </div>
+                        
+                    </div>
+                    <button class="btn btn-dark btn-block mt-2" id="save">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="footer container-fluid" style="color:rgb(255, 0, 85);">
+            <h5> <i>&copy;  2020</i></h5>
+          </div>
+        </div>
+    </div>
+    
+    <script src="./membership.js"></script>
+</body>
+</html>
